@@ -1,0 +1,1 @@
+protoc.exe --csharp_out=C:\Users\curth\source\repos\DireSubStrait\DireSubStrait substrait\plan.proto
