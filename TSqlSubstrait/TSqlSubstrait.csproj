@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.25.0" />
+    <PackageReference Include="Microsoft.SqlServer.TransactSql.ScriptDom" Version="161.8910.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DireSubStrait\DireSubStrait.csproj" />
   </ItemGroup>
 
 </Project>

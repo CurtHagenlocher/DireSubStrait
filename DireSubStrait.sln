@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DireSubStrait", "DireSubStrait\DireSubStrait.csproj", "{497DE20C-331E-42C0-9A9D-36FB1ACBAE21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DireSubStrait", "DireSubStrait\DireSubStrait.csproj", "{497DE20C-331E-42C0-9A9D-36FB1ACBAE21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSqlSubstrait", "TSqlSubstrait\TSqlSubstrait.csproj", "{935E0FEA-96A7-4989-A6C4-C08A7FAE0495}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkSubstrait", "SparkSubstrait\SparkSubstrait.csproj", "{B9966117-9269-4622-84F8-4FE002790F6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkSubstraitTests", "SparkSubstraitTests\SparkSubstraitTests.csproj", "{3CD4182E-19FD-41D7-83A5-E2F3ED6C387A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSqlSubstraitTests", "TSqlSubstraitTests\TSqlSubstraitTests.csproj", "{4BA1C54A-F0CB-458B-9D70-1BA348825582}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{497DE20C-331E-42C0-9A9D-36FB1ACBAE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{497DE20C-331E-42C0-9A9D-36FB1ACBAE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{497DE20C-331E-42C0-9A9D-36FB1ACBAE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935E0FEA-96A7-4989-A6C4-C08A7FAE0495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935E0FEA-96A7-4989-A6C4-C08A7FAE0495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935E0FEA-96A7-4989-A6C4-C08A7FAE0495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935E0FEA-96A7-4989-A6C4-C08A7FAE0495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9966117-9269-4622-84F8-4FE002790F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9966117-9269-4622-84F8-4FE002790F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9966117-9269-4622-84F8-4FE002790F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9966117-9269-4622-84F8-4FE002790F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD4182E-19FD-41D7-83A5-E2F3ED6C387A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD4182E-19FD-41D7-83A5-E2F3ED6C387A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD4182E-19FD-41D7-83A5-E2F3ED6C387A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD4182E-19FD-41D7-83A5-E2F3ED6C387A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA1C54A-F0CB-458B-9D70-1BA348825582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA1C54A-F0CB-458B-9D70-1BA348825582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA1C54A-F0CB-458B-9D70-1BA348825582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA1C54A-F0CB-458B-9D70-1BA348825582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
