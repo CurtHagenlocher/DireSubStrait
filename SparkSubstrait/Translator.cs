@@ -1,27 +1,22 @@
-using Antlr4.Runtime;
-using SparkSubstrait;
-using Xunit;
+﻿using Antlr4.Runtime;
+using Antlr4.Runtime.Misc;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace SparkSubstraitTests
+namespace SparkSubstrait
 {
-    public class UnitTest1
+    public class Translator
     {
-        [Fact]
-        public void SmokeTest()
+        public static void Translate(string text)
         {
-            AntlrInputStream stream = new AntlrInputStream("`A` = 1");
+            AntlrInputStream stream = new AntlrInputStream(text);
             SqlBaseLexer lexer = new SqlBaseLexer(stream);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
             SqlBaseParser parser = new SqlBaseParser(tokens);
 
-            var result = parser.booleanExpression();
+            var result = parser.statement();
             new SqlVisitor().Visit(result);
-        }
-
-        [Fact]
-        public void Select1()
-        {
-            Translator.Translate("SELECT 1");
         }
 
         class SqlVisitor : SqlBaseParserBaseVisitor<object>
@@ -34,6 +29,11 @@ namespace SparkSubstraitTests
             public override object VisitArithmeticBinary(SqlBaseParser.ArithmeticBinaryContext context)
             {
                 return base.VisitArithmeticBinary(context);
+            }
+
+            public override object VisitConstant([NotNull] SqlBaseParser.ConstantContext context)
+            {
+                return base.VisitConstant(context);
             }
         }
     }
